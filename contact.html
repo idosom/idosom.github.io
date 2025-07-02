@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>404 - Page Not Found</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <style>
+      :root {
+        --base: #1e1e2e;
+        --mantle: #181825;
+        --crust: #11111b;
+        --text: #cdd6f4;
+        --subtext1: #bac2de;
+        --overlay2: #9399b2;
+        --surface0: #313244;
+        --mauve: #cba6f7;
+        --red: #f38ba8;
+        --green: #a6e3a1;
+        --font-mono: "JetBrains Mono Regular", "Consolas", "Courier New",
+          monospace;
+      }
+
+      @font-face {
+        font-family: "JetBrains Mono Regular";
+
+        src: url("assets/Fonts/JetBrainsMono-Regular.ttf");
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: var(--font-mono);
+        background-color: var(--base);
+        color: var(--text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 1.7;
+        font-size: 16px;
+        overflow: hidden;
+      }
+
+      .container {
+        padding: 30px;
+        max-width: 600px;
+      }
+
+      .status-code {
+        font-size: 6em;
+        font-weight: bold;
+        color: var(--red);
+        margin-bottom: 0.1em;
+        text-shadow: 3px 3px 0px var(--crust);
+      }
+
+      .message {
+        font-size: 1.5em;
+        color: var(--subtext1);
+        margin-bottom: 0.5em;
+      }
+
+      .explanation {
+        font-size: 1em;
+        color: var(--text);
+        margin-bottom: 2em;
+      }
+
+      .home-link {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: var(--green);
+        color: var(--crust);
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+        font-size: 1em;
+      }
+
+      .home-link:hover {
+        background-color: #8ccf7e;
+        transform: translateY(-2px);
+      }
+
+      .ascii-art {
+        font-family: "Courier New";
+        color: var(--overlay2);
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        white-space: pre;
+      }
+
+      @media (max-width: 600px) {
+        .status-code {
+          font-size: 4.5em;
+        }
+        .message {
+          font-size: 1.3em;
+        }
+        body {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="status-code">OOPS</div>
+      <div class="message">This page doesn't exist yet</div>
+      <pre class="ascii-art">
+             ___                
+           .="   "=._.---.      
+         ."         c ' Y'`p    
+        /   ,       `.  w_/     
+        |   '-.   /     /       
+  _,..._|      )_-\ \_=.\       
+ `-....-'`------)))`=-'"`'"      
+        </pre
+      >
+      <div class="explanation">Contact me @ idosomekh@gmail.com</div>
+      <a href="/" class="home-link">Return to Home</a>
+    </div>
+  </body>
+</html>
